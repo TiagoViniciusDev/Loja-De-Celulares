@@ -1,0 +1,28 @@
+.Loading{
+    min-height: 80vh;
+    position: relative;
+}
+
+.Loading svg{
+    font-size: 2em;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    animation-name: rotacionar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotacionar{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
