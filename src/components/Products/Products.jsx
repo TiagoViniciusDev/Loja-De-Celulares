@@ -22,7 +22,7 @@ function Products(){
 
     return(
         (loading ? <Loading /> : 
-        <section className='products'>
+        <section className='products container'>
             {products.map((produtos) => (<ProductCard key={produtos.id} data={produtos}/>))}
         </section>)
     )
